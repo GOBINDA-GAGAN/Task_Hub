@@ -4,6 +4,7 @@ import express from "express";
 import { notFoundPage, errorHandler } from "./middleware/error.js";
 import morgan from "morgan";
 import DbConnection from "./config/DbConnection.js";
+import router from "./routes/index.js";
 
 dotenv.config();
 
@@ -33,6 +34,12 @@ app.get("/", (req, res) => {
     message: "Welcome to TaskHub Api",
   });
 });
+
+
+
+app.use("/api-v1",router)
+
+
 
 //? error middleware
 app.use(errorHandler);
