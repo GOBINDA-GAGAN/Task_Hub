@@ -63,7 +63,7 @@ const SignUp = () => {
                     <FormControl>
                       <Input
                         type="text"
-                        placeholder="Full name"
+                        placeholder="Full Name"
                         {...field}
                       />
                     </FormControl>
@@ -98,7 +98,7 @@ const SignUp = () => {
                     <FormControl>
                       <Input
                         type="password"
-                        placeholder="Enter password"
+                        placeholder="Enter Password"
                         {...field}
                       />
                     </FormControl>
@@ -111,7 +111,7 @@ const SignUp = () => {
                 name="confirmPassword"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Confirm password</FormLabel>
+                    <FormLabel>Confirm Password</FormLabel>
 
                     <FormControl>
                       <Input
